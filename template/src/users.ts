@@ -3,5 +3,5 @@ interface User {
 }
 
 export async function getUsers(): Promise<User[]> {
-  return await [{ name: "Javi" }, { name: "Núria" }, { name: "Isma" }];
+  return Promise.resolve([{ name: "Javi" }, { name: "Núria" }, { name: "Isma" }]);
 }
