@@ -12,7 +12,21 @@
       "eslint-config-codely": "^1.1.4"
     },
     "eslintConfig": {
-      "extends": ["react-app", "react-app/jest", "eslint-config-codely"]
+      "extends": [
+        "react-app",
+        "react-app/jest",
+        "eslint-config-codely/typescript"
+      ],
+      "parserOptions": {
+        "project": ["./tsconfig.json"]
+      },
+      "settings": {
+        "import/resolver": {
+          "node": {
+            "extensions": [".js", ".jsx", ".ts", ".tsx"]
+          }
+        }
+      }
     }
   }
 }
