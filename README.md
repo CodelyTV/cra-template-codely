@@ -1,65 +1,101 @@
-# TypeScript Bootstrap (base / project starter)
+<p align="center">
+  <a href="https://codely.com">
+    <img src="https://user-images.githubusercontent.com/10558907/170513882-a09eee57-7765-4ca4-b2dd-3c2e061fdad0.png" width="300px" height="92px" alt="Codely logo"/>
+  </a>
+</p>
 
-This is a repository intended to serve as a starting point if you want to bootstrap a project in TypeScript.
+<h1 align="center">
+  🌱⚛️ Create React App Codely template
+</h1>
 
-## Features
+<p align="center">
+    <a href="https://github.com/CodelyTV/cra-template-codely/actions/workflows/ci.yml"><img src="https://github.com/CodelyTV/cra-template-codely/actions/workflows/ci.yml/badge.svg" alt="Build status"/></a>
+    <a href="https://github.com/CodelyTV"><img src="https://img.shields.io/badge/CodelyTV-OS-green.svg?style=flat-square" alt="Codely Open Source"/></a>
+    <a href="https://pro.codely.com"><img src="https://img.shields.io/badge/CodelyTV-PRO-black.svg?style=flat-square" alt="CodelyTV Courses"/></a>
+</p>
 
-- [TypeScript](https://www.typescriptlang.org/) (v4)
-- [Webpack](https://webpack.js.org/) (v5)
-- [Babel](https://babeljs.io/) with [preset-env](https://babeljs.io/docs/en/babel-preset-env)
-- [Prettier](https://prettier.io/)
-- [ESLint](https://eslint.org/) with:
-  - [Simple Import Sort](https://github.com/lydell/eslint-plugin-simple-import-sort/)
-  - [Import plugin](https://github.com/benmosher/eslint-plugin-import/)
-  - [HTML plugin](https://github.com/BenoitZugmeyer/eslint-plugin-html)
-  - And a few other ES2015+ related rules
-- [Jest](https://jestjs.io) with [DOM Testing Library](https://testing-library.com/docs/dom-testing-library/intro)
-- [Cypress](https://www.cypress.io/) with [Testing Library](https://testing-library.com/docs/cypress-testing-library/)
-- [GitHub Action workflows](https://github.com/features/actions) set up to run tests and linting on push
+<p align="center">
+  Template for creating your React apps with TypeScript following best practices: Unit and end-to-end tests, Continuous Integration, and linting. 
+  <br />
+  <br />
+  <a href="https://github.com/CodelyTV/cra-template-codely/stargazers">Stars are welcome 😊</a>
+</p>
 
-## Running the app
+## 🚀 Using this CRA template
 
-```
-# install dependencies
-npm install
+### 🤔 CRA introduction
 
-# run in dev mode on port 8080
-npm run dev
+React officially support to create your custom templates for the Create React App (CRA) utility.
 
-# generate production build
-npm run build
+This Codely template is just a way to optimize even more the default CRA template adding the bare minimum [features we consider necessary on every React project](https://github.com/CodelyTV/cra-template-codely#-template-features).
 
-# run generated content in dist folder on port 8080
-npm run start
-```
+### ⚡ How to create your React app
 
-## Testing
+Create your React app with TypeScript and taking advantage of the scaffolding provided by this template executing this `npx` command in your terminal:
 
-### Jest with Testing Library
-
-```
-npm run test
+```bash
+npx create-react-app my-app --template @codelytv/cra-template-codely
 ```
 
-### Cypress
+Or, if you prefer to use Yarn instead of npm: 
 
-```
-# run in dev mode on port 8080
-npm run dev
-
-# open Cypress to run tests on dev mode
-npm run cy:open
-
-# open Cypress on CLI
-npm run cy:run
+```bash
+yarn create react-app --template @codelytv/cra-template-codely my-app
 ```
 
-## Linting
+It will create a `my-app` folder inside the directory where you execute the command. You will find a `README.md` in the root of your generated project with the instructions on how to build, test, and run your application 🤟
 
-```
-# run linter
-npm run lint
+### 🌩️ What does CRA do while creating the project
 
-# fix lint issues
-npm run lint:fix
+The `my-app` created with the `npx` command will contain a ready-to-use application thanks to the magic CRA does behind the scenes:
+
+- Copy everything inside [this CRA `template` folder](template) into your project root directory
+- Create the project `package.json` based on the dependencies that CRA needs such as React itself _in the latest version possible_, plus the dependencies added by Codely in the [`template.json`](template.json)
+- Create the project `.gitignore` file based on the [`template/gitignore`](template/gitignore)
+- Depending on if you have used Yarn or npm while creating the project, it will have available the corresponding commands and config files in order to run the generated app
+- Install all the dependencies
+
+## 🌈 Template Features
+
+- [TypeScript](https://www.typescriptlang.org/)
+- [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) already configured with the [🤏 Codely's configuration](https://github.com/CodelyTV/eslint-config-codely)
+- [Jest](https://jestjs.io) with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) for the unit tests
+- [Cypress](https://www.cypress.io/) with [Testing Library](https://testing-library.com/docs/cypress-testing-library/) for the end-to-end tests
+- [GitHub Action Workflows](https://github.com/features/actions) set up to run tests and linting on push
+
+## 💻 Improving this CRA template
+
+You can improve this CRA and make Pull Requests to this repository. In order to locally test how your improvements generate a new project, you can specify a local template file with the following command:
+
+```bash
+npx create-react-app my-app --template file:../path/to/cra-template-codely
 ```
+
+## 👌 Codely Code Quality Standards
+
+Publishing this package we are committing ourselves to the following code quality standards:
+
+- 🤝 Respect **Semantic Versioning**: No breaking changes in patch or minor versions
+- 🤏 No surprises in transitive dependencies: Use the **bare minimum dependencies** needed to meet the purpose
+- 🎯 **One specific purpose** to meet without having to carry a bunch of unnecessary other utilities
+- ✅ **Tests** as documentation and usage examples
+- 📖 **Well documented ReadMe** showing how to install and use
+- ⚖️ **License favoring Open Source** and collaboration
+
+## 🔀 Related templates
+
+Opinionated TypeScript skeletons ready for different purposes:
+
+- [🔷🌱 TypeScript Basic Skeleton](https://github.com/CodelyTV/typescript-basic-skeleton)
+- [🔷🕸️ TypeScript Web Skeleton](https://github.com/CodelyTV/typescript-web-skeleton)
+- [🔷🌍 TypeScript API Skeleton](https://github.com/CodelyTV/typescript-api-skeleton)
+- [🔷✨ TypeScript DDD Skeleton](https://github.com/CodelyTV/typescript-ddd-skeleton)
+
+This same skeleton philosophy implemented in other programming languages:
+
+- [✨ JavaScript Basic Skeleton](https://github.com/CodelyTV/javascript-basic-skeleton)
+- [☕ Java Basic Skeleton](https://github.com/CodelyTV/java-basic-skeleton)
+- [📍 Kotlin Basic Skeleton](https://github.com/CodelyTV/kotlin-basic-skeleton)
+- [🧬 Scala Basic Skeleton](https://github.com/CodelyTV/scala-basic-skeleton)
+- [🦈 C# Basic Skeleton](https://github.com/CodelyTV/csharp-basic-skeleton)
+- [🐘 PHP Basic Skeleton](https://github.com/CodelyTV/php-basic-skeleton)
