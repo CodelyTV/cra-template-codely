@@ -52,4 +52,4 @@ jobs:
         with:
           build: npm run build
           start: npm run start
-          wait-on: "http://localhost:8080"
+          wait-on: "http://localhost:3000"

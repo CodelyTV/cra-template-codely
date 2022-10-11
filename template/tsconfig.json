@@ -6,6 +6,7 @@
       "dom.iterable",
       "esnext"
     ],
+    "types": ["cypress"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -23,6 +24,8 @@
   "include": [
     "src",
     "tests",
-    "./cypress.config.ts"
+    "cypress",
+    "jest.config.js",
+    "cypress.config.ts"
   ]
 }
