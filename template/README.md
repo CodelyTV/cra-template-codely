@@ -37,7 +37,7 @@
 
 ### End-to-end tests
 
-- `npm run dev`: Run in dev mode on [localhost:3000](http://localhost:3000)
+- `npm start`: Run in dev mode on [localhost:3000](http://localhost:3000)
 - Run end-to-end tests with Cypress choosing one of the following options:
   - `npm run cy:open`: Open Cypress in dev mode
   - `npm run cy:run`: Execute Cypress in CLI

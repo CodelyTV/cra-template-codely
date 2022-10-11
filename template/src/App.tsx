@@ -1,7 +1,7 @@
 function App() {
   return (
     <div className="App">
-      <p>🌱⚛️ Create React App Codely template example</p>
+      <h3>🌱⚛️ Create React App Codely template example</h3>
     </div>
   );
 }
