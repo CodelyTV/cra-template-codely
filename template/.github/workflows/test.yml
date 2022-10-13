@@ -25,7 +25,7 @@ jobs:
         run: npm install
 
       - name: Test
-        run: npm run test
+        run: npm run test -- --watchAll=false
   e2e:
     runs-on: ubuntu-latest
 
@@ -45,10 +45,10 @@ jobs:
             ${{ runner.os }}-
 
       - name: Install Dependencies
-        run: npm install
+        run: npm install -- --watchAll=false
 
       - name: Cypress run
-        uses: cypress-io/github-action@v2
+        uses: cypress-io/github-action@v4
         with:
           build: npm run build
           start: npm run start
