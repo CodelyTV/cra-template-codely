@@ -1,7 +1,7 @@
 export function App() {
-  return (
-    <div className="App">
-      <h3>🌱⚛️ Create React App Codely template example</h3>
-    </div>
-  );
+	return (
+		<div className="App">
+			<h3>🌱⚛️ Create React App Codely template example</h3>
+		</div>
+	);
 }

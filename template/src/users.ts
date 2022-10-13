@@ -1,7 +1,7 @@
 interface User {
-  name: string;
+	name: string;
 }
 
 export async function getUsers(): Promise<User[]> {
-  return Promise.resolve([{ name: "Javi" }, { name: "Núria" }, { name: "Isma" }]);
+	return Promise.resolve([{ name: "Javi" }, { name: "Núria" }, { name: "Isma" }]);
 }
