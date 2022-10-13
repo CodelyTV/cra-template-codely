@@ -26,7 +26,8 @@
       "stylelint": "^14.1.0",
       "stylelint-config-rational-order": "^0.1.2",
       "stylelint-config-standard-scss": "^3.0.0",
-      "stylelint-order": "^5.0.0"
+      "stylelint-order": "^5.0.0",
+      "sass": "^1.55.0"
     },
     "dependencies": {},
     "eslintConfig": {
