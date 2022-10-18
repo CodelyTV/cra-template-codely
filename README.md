@@ -57,11 +57,15 @@ The `my-app` created with the `npx` command will contain a ready-to-use applicat
 
 ## 🌈 Template Features
 
-- [TypeScript](https://www.typescriptlang.org/)
-- [ESLint](https://eslint.org/) and [Prettier](https://prettier.io/) already configured with the [🤏 Codely's configuration](https://github.com/CodelyTV/eslint-config-codely)
+- [TypeScript](https://www.typescriptlang.org)
+- [ESLint](https://eslint.org) and [Prettier](https://prettier.io) already configured with the [🤏 Codely's configuration](https://github.com/CodelyTV/eslint-config-codely)
 - [Jest](https://jestjs.io) with [React Testing Library](https://testing-library.com/docs/react-testing-library/intro) for the unit tests
-- [Cypress](https://www.cypress.io/) with [Testing Library](https://testing-library.com/docs/cypress-testing-library/) for the end-to-end tests
+- [Cypress](https://www.cypress.io) with [Testing Library](https://testing-library.com/docs/cypress-testing-library) for the end-to-end tests
 - [GitHub Action Workflows](https://github.com/features/actions) set up to run tests and linting on push
+- [Makefile](https://github.com/CodelyTV/cra-template-codely/blob/main/template/Makefile) for standardize how to run projects
+- [Sass](https://sass-lang.com) to supercharge CSS with nested classes and more fun
+- [.editorconfig](https://editorconfig.org) for sharing the IDE config
+
 
 ## 💻 Improving this CRA template
 
