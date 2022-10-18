@@ -5,7 +5,7 @@
 </p>
 
 <h1 align="center">
-  🌱⚛️ Create React App Codely template
+  <🌱⚛️> Create React App Codely template
 </h1>
 
 <p align="center">
