@@ -24,7 +24,6 @@
   "include": [
     "src",
     "tests",
-    "cypress",
     "jest.config.js",
     "cypress.config.ts"
   ]
