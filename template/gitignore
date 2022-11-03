@@ -9,4 +9,4 @@ node_modules/
 .env.test
 
 # Build output
-dist
+build
