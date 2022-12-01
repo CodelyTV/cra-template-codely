@@ -24,10 +24,11 @@
 ## 🚀 Run the app
 
 - `npm install`: Install dependencies
-  Keep in mind that once you create your app based on the [🌱⚛️ Create React App Codely template](https://github.com/CodelyTV/cra-template-codely), CRA will install all the needed dependencies. However, if you modify the `package.json` manually, you can run this command as usual
-- `npm run dev`: Run in dev mode on [localhost:3000](http://localhost:3000)
+- `cp .env.example .env`: Create the environment variables file based on the example template
+- `vim .env`: Specify your GitHub Personal access token ([how to get it](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token) -> [your tokens](https://github.com/settings/tokens) -> Enable `Repo.public_repo`)
+- `vim src/devdash_config.ts`: Set the repository URLs you want to show on your *DevDash_*
+- `npm start`: Run in dev mode on [localhost:3000](http://localhost:3000)
 - `npm run build`: Generate production build
-- `npm run start`: Run generated content in `dist` folder on [localhost:3000](http://localhost:3000)
 
 ## ✅ Testing
 
