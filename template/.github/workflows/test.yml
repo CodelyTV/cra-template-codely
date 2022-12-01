@@ -18,7 +18,7 @@ jobs:
         run: npm install
 
       - name: Test
-        run: npm run test -- --watchAll=false
+        run: npx jest --config=jest.config.js
   e2e:
     runs-on: ubuntu-latest
 
