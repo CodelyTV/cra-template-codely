@@ -4,7 +4,7 @@ export default defineConfig({
 	video: false,
 	e2e: {
 		baseUrl: "http://localhost:3000",
-		specPattern: "tests/e2e/e2e/**/*.spec.{js,jsx,ts,tsx}",
+		specPattern: "tests/e2e/tests/**/*.spec.{js,jsx,ts,tsx}",
 		screenshotOnRunFailure: false,
 		video: false,
 		viewportWidth: 1920,
